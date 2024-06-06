@@ -1,0 +1,25 @@
+<div class="navbar">
+    <div class="navbar-left">
+      <button (click)="goBack()">Back</button>
+    </div>
+  </div>
+  
+
+<div class="container">
+    <div class="background-image">
+        <img src="assets/review.jpg" alt="review">
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <h1 class="title">Write a Review</h1>
+            <form [formGroup]="reviewForm" (ngSubmit)="onSubmit()">
+                <label for="rating" class="bold-text">Rating</label>
+                <input id="rating" formControlName="rating" type="number" min="1" max="5" placeholder="Enter rating" class="left-aligned bold-text">
+                <br>
+                <label for="comment" class="bold-text">Comment</label>
+                <textarea id="comment" formControlName="comment" placeholder="Enter your comment (max 50 words)" class="left-aligned bold-text"></textarea>
+                <button type="submit" class="button-style">Give Review</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="navbar">
+  <div class="navbar-left">
+    <button (click)="goBack()">Back</button>
+  </div>
+</div>
+
+<div class="experiences-container">
+  <h1 class="main-heading">We value our Customer's Experience!</h1>
+  <div class="cards-container">
+      <div class="experience-card" *ngFor="let ex of experiences">
+          <div class="rating">
+            @for (item of getStarsArray(ex.rating); track $index) {
+              <span class="star filled" >&#9733;</span>
+            }
+              
+          </div>
+          <p class="comment">{{ex.comment}}</p>
+      </div>
+  </div>
+</div>

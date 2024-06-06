@@ -1,0 +1,35 @@
+<div class="navbar">
+  <div class="navbar-left">
+    <button (click)="goBack()">Back</button>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 class="title">Add a New Activity</h1>
+  <div class="background-image">
+    <img src="assets/allUsersBg.jpg" alt="Background Image">
+  </div>
+  <div class="form-container">
+    <form [formGroup]="activityForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name" class="bold-text">Name</label>
+        <input id="name" formControlName="name" type="text" placeholder="Enter activity name" class="left-aligned bold-text">
+      </div>
+      <div class="form-group">
+        <label for="location" class="bold-text">Location</label>
+        <input id="location" formControlName="location" type="text" placeholder="Enter activity location" class="left-aligned bold-text">
+      </div>
+      <div class="form-group">
+        <label for="price" class="bold-text">Price</label>
+        <input id="price" formControlName="price" type="number" placeholder="Enter activity price" class="left-aligned bold-text">
+      </div>
+      <!-- Add field for image URL -->
+      <div class="form-group">
+        <label for="imageUrl" class="bold-text">Image Url</label>
+        <input id="imageUrl" formControlName="imageUrl" type="text" placeholder="Enter image URL" class="left-aligned bold-text">
+      </div>
+      <button type="submit" class="button-style">Add Activity</button>
+    </form>
+  </div>
+</div>

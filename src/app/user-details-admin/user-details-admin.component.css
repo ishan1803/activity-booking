@@ -1,0 +1,137 @@
+.title {
+    color: #ffffff;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    z-index: -1;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-container {
+    position: absolute;
+    top: 5%;
+    right: 10%; /* Adjust the distance from the right side */
+    z-index: 1;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.5); /* Translucent black */
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.bold-text {
+    font-weight: bold;
+    color: #ffffff; /* White color for text */
+}
+
+.details {
+    margin-bottom: 20px;
+}
+
+.details p {
+    margin-bottom: 10px;
+    color: #ffffff; /* White color for text */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin : 10px;
+}
+
+.buttons button:hover {
+    background-color: lightgrey;
+    color: #0a0a0a;
+}
+
+.navbar {
+    background-color: white; /* Updated navbar color */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .navbar-left {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Add styles for the search bar and dropdown */
+  .navbar-left input, .navbar-left select {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .navbar-left button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-left button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .navbar-right button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-right button:hover {
+    background-color: white;
+    color: #4D869C;
+  }
+    

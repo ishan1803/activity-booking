@@ -1,0 +1,26 @@
+<div class="navbar">
+    <div class="navbar-left">
+      <button (click)="goBack()">Back</button>
+    </div>
+  </div>
+  
+
+<div class="container">
+    <h1 class="title">Update Your Details</h1>
+    <div class="background-image">
+        <img src="assets/paragliding.jpg" alt="Paragliding">
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <label for="name" class="bold-text">Name</label>
+            <input id="name" #nameInput type="text" placeholder="Enter your name" class="left-aligned bold-text">
+            <br>
+            <label for="email" class="bold-text">Email</label>
+            <input id="email" #emailInput type="email" placeholder="Enter your email" class="left-aligned bold-text">
+            <br>
+            <label for="password" class="bold-text">Password</label>
+            <input id="password" #passwordInput type="password" placeholder="Enter your password" class="left-aligned bold-text">
+            <button type="button" class="button-style" (click)="onSubmit(nameInput.value, emailInput.value, passwordInput.value)">Update</button>
+        </div>
+    </div>
+</div>

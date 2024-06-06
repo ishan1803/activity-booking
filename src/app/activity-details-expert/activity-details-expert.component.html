@@ -1,0 +1,29 @@
+<div class="navbar">
+  <div class="navbar-left">
+    <button (click)="goBack()">Back</button>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="background-slideshow" *ngIf="activity">
+    <img src="assets/activity1.jpg" class="slide" />
+    <img src="assets/activity2.jpg" class="slide" />
+    <img src="assets/activity3.jpg" class="slide" />
+    <img src="assets/activity4.jpg" class="slide" />
+    <img src="assets/activity5.jpg" class="slide" />
+  </div>
+  <div class="card">
+    <h1>{{ activity?.name }}</h1>
+    <p><strong>Price:</strong> {{ activity?.price }}</p>
+    <p><strong>Location:</strong> {{ activity?.location }}</p>
+    <br>
+    <br>
+    <div class="button-group">
+      <button (click)="viewReviews(activity.activityId)">View Reviews</button>
+      <button (click)="viewBookings(activity.activityId)">View Bookings</button>
+      <button (click)="deleteActivity(activity.activityId)">Delete</button>
+      <button (click)="updateActivity(activity.activityId)">Update</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="navbar">
+  <div class="navbar-left">
+    <button (click)="goBack()">Back</button>
+  </div>
+</div>
+
+
+<div class="banner">
+  <h1>Your Bookings</h1>
+  <img src="assets/banner.jpg" alt="Banner Image" />
+</div>
+
+<div class="bookings">
+  <div *ngFor="let booking of bookings" class="booking-card">
+    <img [src]="booking.activityImageUrl" alt="{{ booking.activityName }}" />
+    <p>{{ booking.activityName }}</p>
+    <p>{{ booking.activityLocation }}</p>
+    <p>{{booking.bookingId}}</p>
+    <button (click)="cancelBooking(booking?.bookingId)">Cancel Booking</button>
+  </div>
+</div>

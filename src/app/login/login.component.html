@@ -1,0 +1,21 @@
+<div class="container">
+    <h1 class="title">Book your perfect adventure!</h1>
+    <div class="background-image">
+      <img src="assets/paragliding.jpg" alt="Paragliding">
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <h2>Login</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <label for="email" class="bold-text">Email</label>
+          <input id="email" formControlName="email" type="email" placeholder="Enter your email" class="left-aligned bold-text">
+          <br>
+          <label for="password" class="bold-text">Password</label>
+          <input id="password" formControlName="password" type="password" placeholder="Enter your password" class="left-aligned bold-text">
+          <button type="submit" class="button-style">Login</button>
+        </form>
+        <button class="signup button-style" (click)="goToSignup()" routerLink="/signup">Sign Up</button>
+      </div>
+    </div>
+  </div>
+  

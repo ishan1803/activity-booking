@@ -1,0 +1,18 @@
+<div class="navbar">
+  <div class="navbar-left">
+    <button (click)="goToHome()">Home</button>
+  </div>
+</div>
+
+<div class="banner">
+  <h1>Book your perfect adventure!</h1>
+  <img src="assets/banner.jpg" alt="Banner Image" />
+</div>
+
+<div class="activities">
+  <div *ngFor="let activity of activities" class="activity-card">
+    <img [src]="activity.imageUrl" alt="{{ activity.name }}" />
+    <p>{{ activity.name }}</p>
+    <button (click)="viewDetails(activity)">View Details</button>
+  </div>
+</div>

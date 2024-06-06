@@ -1,0 +1,30 @@
+<div class="navbar">
+  <div class="navbar-left">
+    <button (click)="goBack()">Back</button>
+  </div>
+</div>
+
+
+<div class="container" *ngIf="activity">
+  <div class="background-slideshow">
+    <img src="assets/activity1.jpg" class="slide" />
+    <img src="assets/activity2.jpg" class="slide" />
+    <img src="assets/activity3.jpg" class="slide" />
+    <img src="assets/activity4.jpg" class="slide" />
+    <img src="assets/activity5.jpg" class="slide" />
+  </div>
+  <div class="card">
+    <h1>{{ activity.name }}</h1>
+    <p><strong>Price:</strong> {{ activity?.price }}</p>
+    <p><strong>Location:</strong> {{ activity?.location }}</p>
+    <br>
+    <br>
+    <div class="button-group">
+      <button (click)="viewReviews(activity.activityId)">Reviews</button>
+      <button (click)="bookActivity(activity.activityId)">Book</button>
+      <button (click)="giveReview(activity.activityId)">Give a Review</button>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!activity">Loading activity details ...</div>

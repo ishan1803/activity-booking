@@ -1,0 +1,116 @@
+body {
+  background-color: #FDDE55; /* Background color for the whole page */
+  margin: 0;
+  font-family: Arial, sans-serif; /* Ensure consistent font */
+  height: 100vh; /* Ensure the body takes the full height of the viewport */
+}
+
+html {
+  height: 100%; /* Ensure the html element takes the full height of the viewport */
+}
+
+.container {
+  background-color: #F3F8FF; /* Background color for the container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for better separation */
+  margin: 40px auto;
+  width: 80%;
+}
+
+.heading {
+  color: black;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.user-table th, .user-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #7FC7D9;
+  color: black;
+}
+
+.white-row {
+  background-color: white;
+}
+
+.blue-row {
+  background-color: #e7f3ff;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #7FC7D9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.navbar {
+  background-color: #7FC7D9; /* Updated navbar color */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navbar-left {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 10px;
+}
+
+/* Add styles for the search bar and dropdown */
+.navbar-left input, .navbar-left select {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.navbar-left button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #4D869C;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-left button:hover {
+  background-color: white;
+  color: #4D869C;
+}
+
+.navbar-right button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #4D869C;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-right button:hover {
+  background-color: white;
+  color: #4D869C;
+}
+  

@@ -1,0 +1,25 @@
+<div class="navbar">
+  <div class="navbar-left">
+    <button (click)="goBack()">Back</button>
+  </div>
+</div>
+
+
+<div class="container">
+    <h1 class="heading">Bookings</h1>
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let booking of bookings">
+          <td>{{ booking.userName }}</td>
+          <td>{{ booking.userEmail }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
